@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+.box-containner{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--dark-blue);
+  font-family: 'Overpass', sans-serif;
+}
+.main-text{
+  color: var(--white);
+  display: flex;
+  text-align: left;
+  font-weight: 700;
+}
+.sub-text{
+  color: var(--white);
+}
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.star-component{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  background: var(--very-dark-blue);
+}
+.star-button {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--dark-blue);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: var(--light-grey);
+  border: none; 
+  cursor: pointer;
+  transition: background-color 0.2s ease; 
+}
+.star-button.active {
+  background-color: var(--orange); 
+}
+.star-button:not(.active):hover {
+  background-color: var(--medium-grey);
+}
+.thank-you{
+  color: var(--white);
+}
+.submit-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 2rem;
+  width: 20rem;
+  height: 2rem;
+  color:var(--white);
+  background-color: var(--orange);
+}
+.seperator{
+  height: 1rem;
+}
+.rating-box-text{
+  background-color: var(--dark-blue);
+  text-align: center;
+  width: 12rem;
+  color: var(--orange);
+  border-radius: 2rem;
+  
+}
+.thank-you-box{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--very-dark-blue);
+  font-family: 'Overpass', sans-serif;
+  color: var(--white);
+}
+.thank-you-subtext{
+  display: flex;
+  text-align: center;
+  color: var(--light-grey);
+}
+.attribution { 
+font-size: 15px; 
+color: hsl(220, 7%, 91%); 
+background-color: black;
+text-align: center;}
+
+.attribution a { 
+color: hsl(220, 7%, 91%); }
